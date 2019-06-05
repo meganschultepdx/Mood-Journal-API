@@ -3,9 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const Unsplash = require('unsplash-js').default;
+
 
 module.exports = {
-  entry: './src/weather-interface.js',
+  entry: './src/unsplash-interface.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')

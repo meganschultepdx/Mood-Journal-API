@@ -1,18 +1,18 @@
-export class WeatherService {
-  getWeatherByCity(city) {
+export class RandomImage {
+  getRandomBackground() {
     return new Promise(function (resolve, reject) {
       let request = new XMLHttpRequest();
       let key = process.env.API_KEY;
-      let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`;
+      let url = `https://api.unsplash.com/photos/random?client_id=${key}`;
       request.onload = function () {
         if (this.status === 200) {
           resolve(request.response);
         } else {
-          reject(Error(request.statusText));
+           reject(Error(request.statusText));
         }
       }
       request.open("GET", url, true);
       request.send();
     });
-  }
+  } 
 }
