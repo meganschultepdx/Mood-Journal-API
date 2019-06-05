@@ -14,8 +14,9 @@ $(document).ready(function() {
     promise.then(function(response) {
       let body = JSON.parse(response);
       // let generate = response["urls"]["raw"] = "https://images.unsplash.com/photo-1558603510-cf83e66d31e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjc1MzQ0fQ";
-
-      $('body').css('background-image', `${"response.urls.raw"}`);
+      console.log(body);
+      
+      $('body').css('background-image', `url('${body.urls.raw}')`);
       // $('.showHumidity').text(`The humidity in ${city} is ${body.main.humidity}%`);
       // $('.showTemp').text(`The temperature in Kelvins is ${body.main.temp} degrees.`);
     }, function(error) {
