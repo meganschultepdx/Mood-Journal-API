@@ -1,0 +1,27 @@
+body {
+    background-color: #37383a;
+    padding: 30px;
+  }
+
+h1 {
+  font-weight: lighter;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+}
+
+#mood-form {
+  color: lightgrey;
+}
+
+.jumbotron {
+  background-color: #7c797952;
+  text-align: center;
+}
+
+label {
+  font-size: 25px;
+}
