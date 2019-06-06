@@ -6,10 +6,14 @@ import './styles.css';
 
 $(document).ready(function() {
   let userTheme;
+  
   $("#mood-form").submit(function(event) {  
     event.preventDefault();
     userTheme = $("#mood").val();
     $('#mood').val("");
+    $("#userInput").text(userTheme);
+    $('#yoMood').show();
+    
 
     console.log(userTheme);
 
