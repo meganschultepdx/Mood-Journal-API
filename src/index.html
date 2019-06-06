@@ -1,18 +1,23 @@
 <html>
-  <head>
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="unsplash-service.js"></script>
-    <title>Mood Journal</title>
-  </head>
-  <body>
-    <div>
-      <h1></h1>
-      <!-- <label for="theme">Choose a theme for your background:</label>
-      <input id="location" type="text">
-      <button class="btn-success" id="weatherLocation">Get Current Humidity!</button> -->
-      <!-- <div class="errors"></div>
-      <div class="showHumidity"></div>
-      <div class="showTemp"></div> -->
-    </div>
-  </body>
+
+<head>
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="unsplash-service.js"></script>
+  <title>Mood Journal</title>
+</head>
+
+<body>
+  <div>
+    <h1>Mood Journal</h1>
+
+    <form id="mood-form">
+      <label for="mood">Choose a mood for your background, enter a filter term for images here:</label>
+      <input id="mood" type="text">
+      <button type="submit" class="btn-dark">Submit</button>
+    </form>
+    
+  </div>
+</body>
+
 </html>
